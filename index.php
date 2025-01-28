@@ -1,13 +1,4 @@
 <!--
-    TCHL82330400 Tchoutang Yi Tchuigoua Lyblassa Archange
-    AGOY65270300 Agokeng Choundong Yannick Junior
-    BOBR14309900 Rousselle Sandra Bobda Massu
-    TAMG84340500 Tamba Wakou Grace Andrea 
-    
-          
-TP2
-Groupe 11
-INF1001
 Vendredi 29 Decembre 2023    
 -->
 
