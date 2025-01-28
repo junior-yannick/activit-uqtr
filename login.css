@@ -1,0 +1,12 @@
+.button {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 3px;
+  }
+  input[type="reset"]:focus {
+    outline: none;
+  }
+  .button2 {
+    outline: none;
+  }
+  

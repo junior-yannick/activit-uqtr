@@ -1,0 +1,293 @@
+/*  TCHL82330400 Tchoutang Yi Tchuigoua Lyblassa Archange 
+    AGOY65270300 Agokeng Choundong Yannick Junior
+    BOBR14309900 Rousselle Sandra Bobda Massu
+    TAMG84340500 Tamba Wakou Grace Andrea 
+    
+          
+TP2
+Groupe 11
+INF1001
+vendredi 29 Decembre 2023    
+*/
+
+/* Styles généraux pour le body */
+body {
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 80px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Styles pour le header */
+header {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* assure que le padding est inclus dans la largeur */
+}
+
+
+/* Styles pour le paragraphe à l'intérieur du header */
+header p {
+    float: right;
+    font-family: 'Yatra One', cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Styles pour le menu de navigation */
+nav {
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: small;
+    width: 12.9%;
+    float: left;
+    position: relative;
+    margin-top: 7px; 
+}
+
+/* Styles pour les listes à l'intérieur de la navigation */
+nav ul {
+    list-style: none; /* Supprime les puces de liste */
+    padding: 0; 
+    margin: 0; 
+    width: 100%; /* Assure que la liste prend la pleine largeur de la navigation */
+   
+    
+}
+/* Cacher le sous-menu par défaut */
+nav ul li ul {
+    display: none;
+}
+
+/* Styliser le sous-menu */
+nav ul li ul li {
+    display: block; /*  le sous-menu s'affiche en bloc */
+}
+
+
+
+/* Afficher le sous-menu lorsque la souris passe sur l'élément parent */
+nav ul li:hover ul {
+    display: block;
+    background-color: gray; /*  couleur de fond grise */
+    width: 100%; /* le sous-menu prend toute la largeur de 'Accueil' */
+}
+
+/* Stylise les éléments de liste pour qu'ils s'alignent verticalement */
+nav ul li ul {
+    padding: 0;
+    position: static; /* Les éléments du sous-menu s'alignent normalement */
+}
+
+nav ul li {
+    position: relative; /*  le sous-menu s'aligne correctement */
+}
+
+/* Styles pour chaque item du menu */
+nav ul li {
+    padding: 10px; /* Espacement autour du texte */  
+    color: #000; /* Texte noir par défaut */
+    cursor: pointer; /* Curseur en forme de pointeur */
+}
+
+nav ul li:nth-of-type(2), nav ul li:nth-of-type(3) {
+    border-top: 1px solid black; /* Ajoute une bordure en haut de ces éléments */
+}
+
+/* Styles pour les items du menu au survol */
+nav ul li:hover {
+    background-color: gray; /* Fond gris au survol */
+    color: #FFF; /* Texte blanc au survol */
+    font-weight: bold; /* Texte en gras au survol */
+}
+
+
+/* Styles pour les sections de contenu */
+section {
+    float: right;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 84.8%;
+    padding: 10px;
+    position: relative;
+    margin-top: 7px; 
+    display: none; /* Cache toutes les sections par défaut */
+}
+
+/* Affiche la première section (Accueil) par défaut */
+section:first-of-type {
+    display: block;
+}
+
+/* Styles pour le tableau des activités */
+table {
+    width: 99%;  /* Permet au tableau d'occuper presque toute la largeur de sa section parente */
+    border-collapse: collapse; /* Élimine l'espace entre les bordures de cellules */
+}
+
+table th, table td {
+    border: 1px solid black; /* Bordures pour les cellules du tableau */
+    padding: 5px; /* Espacement à l'intérieur des cellules */
+}
+
+/* Centre le texte pour la 1ère et la 4ème colonnes du tableau */
+table td:first-child, table td:last-child {
+    text-align: center;
+}
+/* Style pour les en-têtes du tableau */
+#activite thead th {
+    background-color: #808080; /* Couleur grise */
+    color: #FFF; /* Texte en blanc pour un meilleur contraste */
+}
+
+
+/* Styles pour les paragraphes et les éléments de liste dans le contenu principal */
+section p, section li {
+    font-family: serif;
+    font-size: small;
+}
+
+/* Styles pour la section d'inscription */
+section form {
+    width: 50%; 
+    padding: 20px;
+    border-radius: 5px; /* Coins arrondis pour le formulaire */
+}
+.form-row {
+    display: flex; /* Utilise Flexbox */
+    align-items: center; /* Centre les éléments verticalement */
+    margin-top: 10px; /* Espacement au-dessus de chaque conteneur de champ de formulaire */
+    display: flex;
+    
+}
+
+/* Styles pour les labels dans le formulaire */
+section form label {
+    display: block; /* Affiche le label sur sa propre ligne */
+    margin-top: 10px;    
+    margin-right: 20px; /* Espacement à droite du label pour séparer du champ de saisie */
+    width: 150px;
+}
+
+/* Styles pour les inputs et select dans le formulaire */
+section form input[type="text"],
+section form input[type="date"],
+section form select {
+    width: 50%; /* Largeur de l'élément de formulaire */
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis pour les éléments de formulaire */
+}
+
+/* Styles pour les boutons radio */
+form input[type="radio"] {
+    margin-right: 10px; /* Espace à droite des boutons radio */
+}
+
+/* Style pour aligner les labels des boutons radio à côté des boutons */
+form label[for="homme"], 
+form label[for="femme"] {
+    display: inline; /* Alignement horizontal avec les boutons radio */
+}
+
+
+/* Styles pour le textarea dans le formulaire */
+section form textarea {
+    width: 40%; /* Largeur du textarea */
+    height: 80px; /* Hauteur du textarea */
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis pour le textarea */
+}
+
+/* Styles pour les boutons dans le formulaire */
+section form button {
+    padding: 5px 20px; /* Padding autour du texte du bouton */
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #444; 
+    background-color: white;
+    color: #444; /* Texte en blanc */
+    border-radius: 4px; /* Coins arrondis pour le bouton */
+    cursor: pointer; /* Curseur en forme de pointeur lors du survol */
+}
+
+#map {
+    height: 400px; /*  hauteur de la carte */
+    width: 50%; /* Largeur de la carte */
+}
+
+
+/* Ajouter l'oeil pour le mot de passe*/ 
+.password-container {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.eye::before {
+    content: '\f070'; 
+    font-family: 'Font Awesome 5 Free';
+}
+
+.eye.closed::before {
+    content: '\f06e'; 
+}
+
+
+/* Media Query pour rendre le site responsive */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 5px;
+    }
+
+    header p {
+        font-size: 5px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section form {
+        width: 80%; 
+    }
+
+    table {
+        font-size: small;
+    }
+
+    #map {
+        height: 200px; 
+    }
+
+    .eye {
+        font-size: 14px;
+    }
+
+    
+}
